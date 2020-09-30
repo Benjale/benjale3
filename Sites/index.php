@@ -34,8 +34,7 @@
   <form align="center" action="consultas/consulta_buque_puerto_año.php" method="post">
     Puerto:
     <input type="text" name="puerto">
-    <br/><br/>
-    <input type="submit" value="Buscar">
+    <br/>
     Año:
     <input type="text" name="año">
     <br/><br/>
