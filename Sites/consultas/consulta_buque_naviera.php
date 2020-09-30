@@ -8,7 +8,7 @@
 
 	$naviera_name = $_POST["nombre_naviera"];
 
- 	$query = "SELECT buques.bid, nombre, patente, buques.pais, num_personas, did_naviera, pid_capitan FROM buques, navieras WHERE navieras.did = buques.did_naviera AND LOWER(navieras.nombre_n) LIKE LOWER('%$naviera_name%');";
+ 	$query = "SELECT buques.bid, nombre, patente, buques.pais, num_personas, did_naviera, pid_capitan FROM buques, navieras WHERE navieras.did = buques.did_naviera AND lower(navieras.nombre_n) LIKE lower('%$naviera_name%');";
 	$result = $db -> prepare($query);
 	$result -> execute();
 	$buques = $result -> fetchAll();
