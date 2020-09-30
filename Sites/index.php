@@ -23,7 +23,7 @@
     <input type="text" name="nombre_naviera">
     <br/><br/>
     <input type="submit" value="Buscar">
-  </form>
+</form>
 
   <br>
   <br>
