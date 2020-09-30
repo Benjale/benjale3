@@ -55,8 +55,8 @@
   <br>
   <br>
   <br>
-  
-  <h3 align="center">Ver el buque con mayor tripulación</h3>
+
+  <h3 align="center">Ver el buque pesquero con mayor tripulación</h3>
 
   <form align="center" action="consultas/consulta_max_tripulacion.php" method="post">
     <input type="submit" value="Mostrar">

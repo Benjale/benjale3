@@ -6,7 +6,7 @@
   #Llama a conexión, crea el objeto PDO y obtiene la variable $db
   require("../config/conexion.php");
 
- 	$query = "SELECT buques.bid, nombre, patente, buques.pais, num_personas, did_naviera, pid_capitan FROM buques WHERE buques.num_personas = (SELECT MAX(buques.num_personas) FROM buques);";
+ 	$query = "SELECT buques.bid, nombre, patente, buques.pais, num_personas, did_naviera, pid_capitan FROM buques, buques_pesqueros WHERE buques.bid = buques_pesqueros.bid AND buques.num_personas = (SELECT MAX(buques.num_personas) FROM buques);";
 	$result = $db -> prepare($query);
 	$result -> execute();
 	$buques = $result -> fetchAll();
